@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.comparison-table {
+  @apply w-full border-collapse;
+}
+
+.comparison-table th {
+  @apply bg-gray-100 border border-gray-300 px-4 py-2 text-left font-semibold;
+}
+
+.comparison-table td {
+  @apply border border-gray-300 px-4 py-2;
+}
+
+.match {
+  @apply bg-green-50;
+}
+
+.mismatch {
+  @apply bg-red-50;
+}
+
+.match-text {
+  @apply text-green-800;
+}
+
+.mismatch-text {
+  @apply text-red-800;
+}
+
+.badge {
+  @apply px-3 py-1 rounded-full text-sm font-medium;
+}
+
+.badge-match {
+  @apply bg-green-100 text-green-800;
+}
+
+.badge-mismatch {
+  @apply bg-red-100 text-red-800;
+}
